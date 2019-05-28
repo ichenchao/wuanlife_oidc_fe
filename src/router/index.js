@@ -71,7 +71,10 @@ export const constantRouterMap = [
     children: [{
       path: '',
       component: Checkin,
-      meta: { title: '午安网 - 过你想过的生活' }
+      meta: {
+        title: '午安网 - 过你想过的生活',
+        requireAuth: true
+      }
     }]
   },
   {
